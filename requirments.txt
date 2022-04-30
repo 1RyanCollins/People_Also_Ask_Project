@@ -1,4 +1,0 @@
-beautifulsoup4
-requests
-googlesearch-python
-people_also_ask
