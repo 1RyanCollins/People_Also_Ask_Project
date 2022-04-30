@@ -6,9 +6,13 @@ import streamlit as st
 st.title("People Also Ask Project")
 st.text ("Enter a Query and See What People Also Asked on Google")
 
-query = st.text_input("Write Your Query")
+query = st.text_input("Write Your Question")
 
-for question in people_also_ask.generate_related_questions("cofee")
+results = people_also_ask.get_related_questions(query)
+
+st.write(results)
+
+
 
 
 
