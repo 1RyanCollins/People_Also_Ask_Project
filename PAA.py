@@ -12,7 +12,7 @@ result = people_also_ask.get_related_questions(query)
 
 
 for answer in people_also_ask.get_answer(result):
-  st.write(answer)
+  st.write(result["displayed_link"])
 
 
 
