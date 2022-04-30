@@ -9,10 +9,12 @@ st.text ("Enter a Query and See What People Also Asked on Google")
 query = st.text_input("Write Your Question")
 
 results = people_also_ask.get_related_questions(query)
-results = result.split("?", 1)
-substring = results[0]
 
-st.write(substring)
+
+answer = people_also_ask.get_answer("Why is coffee bad for you?")
+st.write(answer.get("link"))
+
+#st.write(results)
 
 
 
