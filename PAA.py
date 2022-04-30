@@ -10,9 +10,8 @@ query = st.text_input("Write Your Query")
 
 result = people_also_ask.get_related_questions(query, 5)
 
-
-for i in result: 
-  print(i)
+for answer in people_also_ask.get_answer(result): 
+  st.write(answer[displayed_link])
 
 
 
