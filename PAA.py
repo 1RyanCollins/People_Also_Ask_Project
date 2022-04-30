@@ -8,9 +8,9 @@ st.text ("Enter a Query and See What People Also Asked on Google")
 
 query = st.text_input("Write Your Query")
 
-result = people_also_ask.get_related_questions(query, 5)
+for question in people_also_ask.generate_related_questions("cofee")
 
-st.write(result)
+
 
 
 
