@@ -9,7 +9,7 @@ question = st.text_input("Write Your Question")
 
 result = people_also_ask.get_answer(question)
 
-st.write(result["displayed_link"])
+result["displayed_link"]
 
 
 
