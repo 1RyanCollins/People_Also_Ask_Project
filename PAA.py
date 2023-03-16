@@ -9,7 +9,7 @@ question = st.text_input("Write Your Question")
 
 answer = people_also_ask.get_answer(question)
 
-st.text(answer)
+st.write(answer)
 
 
 
