@@ -4,11 +4,10 @@ import streamlit as st
 
 title("People Also Ask Link Analysis Project")
 
-question = st.text_input("Write Your Question", question)
+question = st.text_input("Write Your Question")
 
 answer = people_also_ask.get_answer(question)
 
-st.write(answer)
 
 
 
