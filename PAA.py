@@ -7,7 +7,7 @@ st.text ("Enter a Query")
 
 question = st.text_input("Write Your Question")
 
-answer = people_also_ask.get_answer(question)
+people_also_ask.get_answer(question)
 
 
 
