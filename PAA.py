@@ -2,12 +2,13 @@ import people_also_ask
 import streamlit as st
 
 
-st.title("People Also Ask Link Analysis Project")
-st.text ("Enter a Query")
+title("People Also Ask Link Analysis Project")
 
-question = st.text_input("Write Your Question")
+question = st.text_input("Write Your Question", question)
 
-people_also_ask.get_answer(question)
+answer = people_also_ask.get_answer(question)
+
+st.write(answer)
 
 
 
