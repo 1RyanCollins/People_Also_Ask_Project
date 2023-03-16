@@ -9,10 +9,10 @@ question = st.text_input("Write Your Question")
 
 result = people_also_ask.get_answer(question)
 
-st.text(result)
+#st.text(result)
 
 
-#st.write(results)
+st.write(results["displayed_link"])
 
 
 
